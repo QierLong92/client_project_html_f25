@@ -1,0 +1,200 @@
+/* Navigation styles */
+nav a {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:focus {
+    font: bold;
+    color: #ffcb05;
+
+}
+
+nav li {
+    margin-right: 24px;
+}
+
+nav {
+    background-color: #00274c;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 115px;
+    text-align: left;
+}
+
+header .logo {
+    border-right: 1px solid white;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+}
+
+/* general setting */
+body {
+    font-size: 16px;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Palatino Linotype";
+    font-size: 24px;
+    text-align: left;
+    line-height: 1.125em;
+    padding: 24px 16px 0 16px
+}
+
+section {
+    padding: 20px 16px;
+    font-family: Helvetica;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 1.25em;
+    color: #2F65A7;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 1.25em;
+    color: #000000;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+main ul,
+main ol {
+    margin-bottom: 20px;
+    line-height: 1.5em;
+    list-style-position: inside;
+}
+
+/* footer */
+footer a,
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+footer {
+    background-color: #00274c;
+    padding: 30px 16px;
+    text-align: center;
+}
+
+/* skip to the main content link styles */
+.skip a {
+    position: absolute;
+    top: -65px;
+    background: white;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.skip a:focus {
+    top: 25px;
+}
+
+/* Main */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+    max-width: 390px;
+}
+
+/*  gap: 16px;
+    margin: 24px auto;*/
+
+.container>* {
+    grid-column: 1/-1;
+    margin: 20px 0;
+}
+
+.container>.overview {
+    grid-column: 1 / -1;
+}
+
+/* Sections effect */
+
+.section1,
+.section2,
+.section3,
+.section4,
+.section5,
+.section6,
+.section7,
+.section8,
+.section9 {
+    grid-column: 1/-1;
+}
+
+/* lists*/
+#Start li,
+#ResumeResource li,
+#ResumeFAQ li,
+#Alumni li,
+#DataResource li,
+#UX li,
+#Library li,
+#OtherResource li,
+#PHDResource li {
+    border: rgb(216, 221, 230) solid 1px;
+    background-color: rgb(243, 247, 255);
+    border-radius: 2%;
+    margin: 8px 0;
+    padding: 16px;
+    box-shadow: 0 0 4px #d2d2d2;
+    list-style-type: none;
+}
+
+#resource li,
+#ResumeFAQ li {
+    border: rgb(255, 255, 255) solid 1px;
+    border-left: #00274c solid 4px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2%;
+    margin: 8px 0;
+    padding: 16px;
+    box-shadow: 0 0 4px #d2d2d2;
+    list-style-type: none;
+}
+
+#Start a,
+#Alumni a, #DataResource a,
+#UX a,
+#Library a,
+#OtherResource a,
+#PHDResource a {
+    text-decoration: none;
+}
+
+iframe,
+main img {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    /*display: block;*/
+}
+
+#Alumni ul,
+#DataResource ul,
+#UX ul,
+#Library ul,
+#OtherResource ul,
+#PHDResource ul {
+    margin-top: 20px;
+    margin-bottom: 32px;
+    padding-left: 0;
+    list-style-position: inside;
+}
